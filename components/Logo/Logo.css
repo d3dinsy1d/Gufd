@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+  color: #DBBD5A;
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (hover: hover) {
+  .logo.--link:hover {
+    opacity: 0.7;
+  }
+}
+
+.logo.--link:active {
+  transform: scale(var(--mainTransformScale));
+}

@@ -1,0 +1,112 @@
+@import url("modern-normalize.css");
+
+/* components */
+
+@import url("../components/Header/Header.css");
+@import url("../components/Logo/Logo.css");
+@import url("../components/Sidebar/Sidebar.css");
+@import url("../components/Title/Title.css");
+@import url("../components/Description/Description.css");
+@import url("../components/Footer/Footer.css");
+@import url("../components/Breadcrumbs/Breadcrumbs.css");
+@import url("../components/Mark/Mark.css");
+@import url("../components/Button/Button.css");
+
+/* components */
+
+/* statics */
+
+@import url("../statics/home/home.css");
+@import url("../statics/doors/doors.css");
+@import url("../statics/doors-type/doors-type.css");
+@import url("../statics/door-card/door-card.css");
+@import url("../statics/contacts/contacts.css");
+
+/* statics */
+
+/* libraries */
+
+@import url("../src/libraries/swiper/swiper.min.css");
+
+/* libraries */
+
+@import url("../src/icons/icons.css");
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../src/fonts/Gilroy/Gilroy-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("../src/fonts/Gilroy/Gilroy-Semibold.woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../src/fonts/Gilroy/Gilroy-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../src/fonts/Inter/Inter-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../src/fonts/Inter/Inter-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../src/fonts/Roboto/Roboto-Medium.woff2");
+}
+
+:root {
+  --mainPadding: 30px;
+  --grayColor: #636363;
+  --headerHeight: 60px;
+  --yellowColor: #DBBD5A;
+  --mainTransformScale: 0.9;
+  --homeSideBarWidth: 400px;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --homeSideBarWidth: 200px;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  color: white;
+  display: flex;
+  overflow: auto;
+  font-weight: 400;
+  align-items: center;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  padding-block-end: 60px;
+  justify-content: flex-start;
+  background-color: #201E20;
+  font-family: "Gilroy-Regular";
+}
+
+main {
+  width: 100%;
+}
+
+html.--lock {
+  overflow: hidden !important;
+}
+
+* {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../global/base.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cube - карточка двери</title>
+ </head>
+ <body>
+  <main>
+   <section class="door-card">
+    <div class="door-card__body">
+     <div class="door-card__container">
+      <header class="header">
+       <div class="header__body">
+        <a class="header__logo logo --link" href="../index.html">
+         <span>C</span>
+        </a>
+        <div class="header__menu">
+        <a class="header__link header__catalog" href="doors.html">
+         <span class="icon main-arrow-left"></span>
+         <span>Назад в каталог</span>
+        </a>
+         <nav class="header__navigation">
+          <ul class="header__list">
+           <li class="header__list-item">
+            <a class="header__link" href="contacts.html">
+             <span>Все контакты</span>
+            </a>
+           </li>
+          </ul>
+         </nav>
+        </div>
+        <div class="header__content">
+         <button class="header__menu-button">
+          <span class="header__menu-icon">
+           <span></span>
+          </span>
+         </button>
+        </div>
+       </div>
+      </header>
+      <div class="door-card__wrapper">
+       <div class="sidebar">
+         <nav class="sidebar__navigation">
+          <ul class="sidebar__list">
+           <li class="sidebar__list-item">
+            <a class="sidebar__button" href="doors.html" data-tooltip="Двери">
+             <span class="icon doors"></span>
+             <span class="sidebar__icon-text">Двери</span>
+            </a>
+           </li>
+           <li class="sidebar__list-item">
+            <a class="sidebar__button" href="panels.html" data-tooltip="Панели">
+             <span class="icon panels"></span>
+             <span class="sidebar__icon-text">Панели</span>
+            </a>
+           </li>
+           <li class="sidebar__list-item">
+            <a class="sidebar__button sidebar__phone-button" href="tel:+79991230011" data-tooltip="+79991230011" data-da=".header__content, 992, 2">
+             <span class="sidebar__icon icon phone"></span>
+            </a>
+           </li>
+          </ul>
+         </nav>
+       </div>
+       <div class="door-card__wrapper-content">
+        <ol class="breadcrumbs" aria-label="Навигация">
+         <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="../index.html">Главная</a>
+         </li>
+         <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="../pages/doors.html">Двери</a>
+         </li>
+         <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="../pages/doors.html">Входные</a>
+         </li>
+         <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link --active">Ferro Nero Elegante</span>
+         </li>
+        </ol>
+        <div class="door-card__content">
+         <div class="door-card__tabs">
+          <nav class="door-card__tabs-navigation">
+           <ul class="door-card__tabs-list">
+            <li class="door-card__tabs-list-item">
+             <a class="door-card__tab-button" href="#door-card__tab-01">
+              <span>Дизайн двери</span>
+             </a>
+            </li>
+            <li class="door-card__tabs-list-item">
+             <a class="door-card__tab-button" href="#door-card__tab-02">
+              <span>Реальные фото</span>
+             </a>              
+            </li>
+           </ul>
+          </nav>
+          <div class="door-card__tabs-body">
+           <div id="door-card__tab-01" class="door-card__tab">
+            <img class="door-card__tab-image" src="../src/images/statics/door-card/Krona.png.png" alt="">
+           </div>
+           <div id="door-card__tab-02" class="door-card__tab">
+            <span>тут типо твоё фото</span>
+           </div>
+          </div>
+         </div>
+        </div>       
+       </div>
+      </div>           
+     </div>
+     <div class="door-card__info">
+      <header class="door-card__info-header" data-da=".door-card__content, 992, 0">
+       <h2 class="door-card__info-title">Межкомнатная дверь Ferro Nero Elegante</h2>
+       <div class="door-card__info-producer">
+        <div class="door-card__info-row">
+         <span>Производитель:</span>
+         <span class="door-card__info-company">Essent</span>
+        </div>
+        <img class="door-card__company-image" src="../src/images/statics/doors-type/essent.webp" alt="">
+       </div>
+      </header>
+      <div class="door-card__info-main">
+       <h3 class="door-card__info-main-title">Дверное полотно</h3>
+       <h6 class="door-card__info-main-description">
+        Каркас из древесных пород клееного бруса. 
+        Подложка под отделку – ДВП или ХДФ
+       </h6>
+      </div>
+      <footer class="door-card__footer">
+       <div class="doors-card__parameters">
+        <header class="doors-card__parameters-header">
+         <h2>Параметры</h2>
+        </header>
+        <ol class="doors-card__parameters-list">
+         <li class="doors-card__parameters-list-item">
+          <div class="doors-card__parameter">
+           <h5 class="doors-card__parameter-title">Высота (мм)</h5>
+           <strong>2000 мм</strong>
+          </div>
+         </li>
+         <li class="doors-card__parameters-list-item">
+          <div class="doors-card__parameter">
+           <h5 class="doors-card__parameter-title">Высота (мм)</h5>
+           <strong>2000 мм</strong>
+          </div>
+         </li>
+        </ol>
+       </div>
+       <div class="door-card__price">
+        <strong class="door-card__price-number">От 15.000 рублей</strong>
+        <a class="door-card__button button --yellow" href="#">
+         <span>Заказать</span>
+         <span class="door-card__button-icon icon main-arrow-right"></span>
+        </a>
+       </div>
+      </footer>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="footer__body">
+    <div class="footer__top">
+     <div class="footer__logo logo">
+      <span>CUBE</span>
+      <span class="footer__logo-text">Интрерьерные решения</span>
+     </div>
+     <nav class="footer__navigation">
+      <ul class="footer__list">
+       <li class="footer__list-item">
+        <a class="footer__link" href="#">
+         <span>Двери</span>
+        </a>
+       </li>
+       <li class="footer__list-item">
+        <a class="footer__link" href="#">
+         <span>Панели</span>
+        </a>
+       </li>
+       <li class="footer__list-item">
+        <a class="footer__link" href="#">
+         <span>Контакты</span>
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+    <div class="footer__bottom">
+     <div class="footer__copyright">
+      <span>
+       Все материалы сайта cube.by принадлежат ООО “Арт Трейд Про”.
+       Копиравание и скачивание без разрешения автора запрещены.
+      </span>
+     </div>
+     <nav class="footer__navigation">
+      <ul class="footer__list">
+       <li class="footer__list-item">
+        <a class="footer__copyright-link footer__link" href="#">
+         <span>Обработка персональных данных</span>
+        </a>
+       </li>
+       <li class="footer__list-item">
+        <a class="footer__copyright-link footer__link" href="#">
+         <span>Политика конфиденциальности</span>
+        </a>
+       </li>
+       <li class="footer__list-item">
+        <a class="footer__copyright-link footer__link" href="#">
+         <span>Согласие с рассылкой</span>
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+  </footer>
+  <script type="module" src="../global/app.js"></script>
+ </body>
+</html>

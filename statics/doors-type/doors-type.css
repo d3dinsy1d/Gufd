@@ -1,0 +1,160 @@
+.doors-type {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--grayColor);
+  padding-inline-start: var(--headerHeight);
+}
+
+.doors-type__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--mainPadding);
+  border-left: 1px solid var(--grayColor);
+}
+
+.doors-type__content {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  max-width: 1655px;
+  flex-direction: column;
+}
+
+.doors-type__header {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doors-type__title {
+  font: normal 600 clamp(1.2rem, 5vw, 3.5rem) "Gilroy-Semibold";
+}
+
+.doors-type__button {
+  text-transform: uppercase;
+}
+
+.doors-type__slider {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  max-width: 1655px;
+  position: relative;
+}
+
+.doors-type__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.doors-type__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.doors-type__list-item.swiper-slide {
+  width: auto !important;
+}
+
+.doors-type__card {
+  width: 385px;
+  display: flex;
+  gap: 30px;
+  font-size: 1.125rem;
+  flex-direction: column;
+}
+
+.doors-type__card-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.doors-type__card-image-preview {
+  width: 100%;
+  height: 465px;
+  object-fit: cover;
+}
+
+.doors-type__card-main {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.doors-type__card-title {
+  font-size: clamp(1.2rem, 5vw, 2.5rem);
+}
+
+.doors-type__card-info {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doors-type__card-producer {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.doors-type__card-producer-name {
+  color: var(--yellowColor);
+}
+
+.doors-type__card-producer-image {
+  width: 90px;
+  height: 22px;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .doors-type {
+    padding-inline-start: unset;
+  }
+
+  .doors-type__body {
+    border-left: unset;
+  }
+
+  .doors-type__button {
+    border: unset;
+    padding: unset;
+    text-transform: revert;
+    color: var(--yellowColor);
+  }
+
+  .doors-type__button {
+    gap: 10px;
+  }
+
+  .doors-type__button .button__icon.icon.main-arrow-right {
+    width: 7px;
+    height: 11px;
+    background-color: var(--yellowColor);
+    -webkit-mask: url("../../src/icons/short-arrow-right.svg") 0% 0% / cover no-repeat;
+    mask: url("../../src/icons/short-arrow-right.svg") 0% 0% / cover no-repeat;
+  }
+}
+
+@media (max-width: 380px) {
+  .doors-type__card {
+    width: 300px;
+  }
+}

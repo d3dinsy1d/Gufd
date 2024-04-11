@@ -1,0 +1,290 @@
+.door-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--grayColor);
+}
+
+.door-card__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.door-card__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.door-card__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.door-card__wrapper-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.door-card__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-block: 50px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.door-card__tabs {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.door-card__tabs-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.door-card__tabs-list {
+  width: 340px;
+  display: flex;
+  overflow: auto;
+  position: relative;
+  align-items: center;
+}
+
+.door-card__tabs-list-item {
+  width: 100%;
+}
+
+.door-card__tab-button {
+  color: white;
+  padding: 16px;
+  display: flex;
+  min-height: 55px;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid var(--grayColor);
+}
+
+.door-card__tab-button * {
+  white-space: nowrap;
+}
+
+.door-card__tab-button.--active {
+  border-bottom-color: var(--yellowColor);
+}
+
+@media (hover: hover) {
+  .door-card__tab-button:hover {
+    opacity: 0.7;
+  }
+
+  .door-card__tab-button.--active:hover {
+    opacity: 1;
+    cursor: default;
+  }
+}
+
+.door-card__tab-button.--active:focus-visible {
+  outline: unset;
+}
+
+.door-card__tab-button:active {
+  transform: scale(var(--mainTransformScale));
+}
+
+.door-card__tab-button.--active:active {
+  transform: scale(1);
+}
+
+.door-card__tabs-body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.door-card__tab {
+  width: 100%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.door-card__tab:target {
+  display: flex;
+}
+
+.door-card__tab-image {
+  width: 210px;
+  height: 560px;
+  object-fit: cover;
+}
+
+.door-card__info {
+  width: 600px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: var(--mainPadding);
+  border-left: 1px solid var(--grayColor);
+}
+
+.door-card__info-header {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.door-card__info-producer {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.door-card__info-row {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.door-card__info-company {
+  color: var(--yellowColor);
+}
+
+.door-card__company-image {
+  width: 95px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.door-card__info-main {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.door-card__info-main-title {
+  font: normal 600 1.5rem "Gilroy-Semibold";
+}
+
+.door-card__info-main-description {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--grayColor);
+}
+
+.door-card__footer {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.doors-card__parameters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.doors-card__parameters-header {
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+  padding-block-end: 20px;
+  border-bottom: 1px solid var(--grayColor);
+  font: normal 600 1.5rem "Gilroy-Semibold";
+}
+
+.doors-card__parameters-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.doors-card__parameters-list-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.doors-card__parameter {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  align-items: center;
+  padding-block: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grayColor);
+}
+
+.doors-card__parameter-title {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.door-card__price {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.door-card__price-number {
+  text-transform: lowercase;
+  font: normal 600 clamp(1.2rem, 5vw, 2.5rem) "Gilroy-Semibold";
+}
+
+.door-card__button {
+  padding-block: 24px;
+  text-transform: uppercase;
+}
+
+.door-card__button-icon {
+  background-color: black !important;
+}
+
+@media (max-width: 992px) {
+  .door-card__body {
+    flex-direction: column;
+  }
+
+  .door-card__content {
+    gap: 40px;
+    border-bottom: 1px solid var(--grayColor);
+  }
+
+  .door-card__info {
+    border-left: unset;
+  }
+
+  .door-card__info {
+    width: 100%;
+  }
+
+  .door-card__info-header {
+    gap: 40px;
+    padding-inline: 50px;
+  }
+}

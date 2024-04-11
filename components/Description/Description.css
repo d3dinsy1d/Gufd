@@ -1,0 +1,5 @@
+.description {
+  font-weight: 400;
+  text-align: center;
+  font-size: clamp(1.2rem, 10vw, 3rem);
+}

@@ -1,0 +1,5 @@
+.mark {
+  background-color: unset;
+  color: var(--yellowColor);
+  font-size: clamp(1.2rem, 10vw, 3rem);
+}

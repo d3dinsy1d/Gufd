@@ -1,0 +1,41 @@
+.icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.icon.doors {
+  -webkit-mask: url("doors.svg") 0% 0% / cover no-repeat;
+  mask: url("doors.svg") 0% 0% / cover no-repeat;
+}
+
+.icon.panels {
+  -webkit-mask: url("panels.svg") 0% 0% / cover no-repeat;
+  mask: url("panels.svg") 0% 0% / cover no-repeat;
+}
+
+.icon.phone {
+  -webkit-mask: url("phone.svg") 0% 0% / cover no-repeat;
+  mask: url("phone.svg") 0% 0% / cover no-repeat;
+}
+
+.icon.short-arrow-down {
+  -webkit-mask: url("short-arrow-down.svg") 0% 0% / cover no-repeat;
+  mask: url("short-arrow-down.svg") 0% 0% / cover no-repeat;
+}
+
+.icon.main-arrow-left {
+  height: 15px;
+  -webkit-mask: url("main-arrow-left.svg") 0% 0% / cover no-repeat;
+  mask: url("main-arrow-left.svg") 0% 0% / cover no-repeat;
+}
+
+.icon.main-arrow-right {
+  width: 60px;
+  -webkit-mask: url("main-arrow-right.svg") 0% 0% / cover no-repeat;
+  mask: url("main-arrow-right.svg") 0% 0% / cover no-repeat;
+}
